@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int year;
+    int i=0;
+
+    while(i < 5){
+        cout << "Enter Year: ";
+        cin >> year;
+        
+        if (year % 4 == 0){
+            if (year % 100 == 0){
+                if (year % 400 == 0){
+                    cout << year << " is a leap year." << endl;
+                }
+                else {
+                    cout << year << " is not a leap year." << endl;
+                }
+            }
+            else {
+                cout << year << " is a leap year." << endl;
+            }
+        }
+        else {  
+            cout << year << " is not a leap year." << endl;
+        }
+    }
+}
