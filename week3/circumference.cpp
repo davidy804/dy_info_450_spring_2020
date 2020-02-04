@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-double radius;
-double circumference;
 const double PI = 3.14;
-double calculateCircumference(double radius);
 
 int main(){
+    double radius;
+    double circumference;
+    double calculateCircumference(double radius);
     cout << "What is the radius of the circle?" << endl;
     cin >> radius;
     circumference = calculateCircumference(radius);
@@ -15,6 +15,7 @@ int main(){
 }
 
 double calculateCircumference(double radius){
+    double circumference;
     circumference = 2 * PI * radius;
     return circumference;
 }
